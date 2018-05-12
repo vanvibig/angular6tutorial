@@ -6,20 +6,12 @@ import { Component, OnInit, Input, EventEmitter, Output } from "@angular/core";
   styleUrls: ["./test.component.css"]
 })
 export class TestComponent implements OnInit {
-  displayName = true;
 
-  @Input('parentData')
-  public name;
-
-  @Output()
-  public childEvent = new EventEmitter();
+  public name = "codevalution";
+  public date = new Date();
 
   constructor() {}
 
   ngOnInit() {}
-
-  fireEvent(){
-    this.childEvent.emit('Hey Codevalution');
-  }
 
 }
