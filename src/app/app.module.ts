@@ -1,3 +1,4 @@
+import { EmployeeService } from './employee.service';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,7 +19,7 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
